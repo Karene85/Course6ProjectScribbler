@@ -1,0 +1,26 @@
+body {
+    background-color: #ffeedd;
+}
+
+.post-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.post {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.post-author {
+    width: 20%;
+}
+
+.post-content {
+    width: 70%;
+}
+

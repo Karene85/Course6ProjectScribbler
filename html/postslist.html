@@ -2,26 +2,45 @@
 <html>
 
 <head>
-    <!-- TODO: Include Font Awesome file here -->
-    <!-- TODO: Include Google Fonts file here -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Posts</title>
+
+    <script src="https://use.fontawesome.com/14db947592.js"></script>
+
+    <link href="../styles/postslist.css" rel="stylesheet" type="text/css">
+    <link href="../styles/common.css" rel="stylesheet" type="text/css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montez&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+
 </head>
 
+
 <body>
-    <!-- TODO: Include code for header here -->
+    <header>
+        <button id="sign-up-button" onclick="openSignUpModal()">Sign Up</button>
+        <button id="sign-in-button" onclick="openSignInModal()">Sign In</button>
+        <a class="logo-title">ScriBBler</a>
+        <p class="tag-line">Explore, Imagine, Create</p>       
+      </header>
 
     <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
 
     <!-- list of all posts starts here -->
-    <div>
+    <div class="post-list">
 
         <!-- post 1 starts here -->
-        <div>
-            <div>
+        <div class="post">
+            <div class="post-author">
                 <p>Srishti Gupta</p>
             </div>
 
-            <div>
-                <div>
+            <div class="post-content">
+                <div class="post-title">
                     <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
                     <span>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
@@ -36,13 +55,13 @@
         <!-- post 1 ends here -->
 
         <!-- post 2 starts here -->
-        <div>
-            <div>
+        <div class="post">
+            <div class="post-author">
                 <p>Colby Fayock</p>
             </div>
 
-            <div>
-                <div>
+            <div class="post-content">
+                <div class="post-title">
                     <p>What is linting and how can it save you time?</p>
                     <span>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
@@ -57,13 +76,13 @@
         <!-- post 2 ends here -->
 
         <!-- post 3 starts here -->
-        <div>
-            <div>
+        <div class="post">
+            <div class="post-author">
                 <p>Yazeed Bzadough</p>
             </div>
 
-            <div>
-                <div>
+            <div class="post-content">
+                <div class="post-title">
                     <p>How to Get More Views on Your Tech Blog</p>
                     <span>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
@@ -78,13 +97,13 @@
         <!-- post 3 ends here -->
 
         <!-- post 4 starts here -->
-        <div>
-            <div>
+        <div class="post">
+            <div class="post-author">
                 <p>Cedd Burge</p>
             </div>
 
-            <div>
-                <div>
+            <div class="post-content">
+                <div class="post-title">
                     <p>How to write easily describable code</p>
                     <span>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
@@ -100,13 +119,13 @@
         <!-- post 4 ends here -->
 
         <!-- post 5 starts here -->
-        <div>
-            <div>
+        <div class="post">
+            <div class="post-author">
                 <p>Srishti Gupta</p>
             </div>
 
-            <div>
-                <div>
+            <div class="post-content">
+                <div class="post-title">
                     <p>Everything you should know about ‘module’ & ‘require’ in Node.js</p>
                     <span>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->

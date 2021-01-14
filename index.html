@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home Page</title>
+
+    <script src="https://use.fontawesome.com/14db947592.js"></script>
+
+    <link href='styles/index.css' rel='stylesheet' type='text/css'>
+    <link href='styles/common.css' rel='stylesheet' type='text/css'>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montez&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- TODO: Include all your code for the header and home page here -->
+    <div class="bg">
+
+      <header>
+        <button id="sign-up-button" onclick="openSignUpModal()">Sign Up</button>
+        <button id="sign-in-button" onclick="openSignInModal()">Sign In</button>
+        <a class="logo-title">ScriBBler</a>
+        <p class="tag-line">Explore, Imagine, Create</p>       
+      </header>
+
+    <div id="sign-up-modal" class="modal">
+        <div class="modal-content">           
+          <span class="close" onclick="closeSignUpModal()"><i class="fa fa-times" aria-hidden="true"></i></span>
+          <h2>Get Started</h2>
+          <form>
+            <label for="name">Name</label> <br>
+            <input type="text" placeholder="Enter your name" id="name" required> <br>
+            <label for="username">Username</label> <br>
+            <input type="text" placeholder="Enter your username" id="username" required> <br>
+            <label for="password">Password</label> <br>
+            <input type="password" placeholder="Enter your password" id="password" required> <br>
+            <label for="confirm-password">Confirm password</label> <br>
+            <input type="password" placeholder="Re-enter your password" id="confirm-password" required> <br>
+          </form>
+          <button>Sign Up</button>
+        </div>      
+      </div>
+
+      <div id="sign-in-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSignInModal()"><i class="fa fa-times" aria-hidden="true"></i></span>
+            <h2>Welcome Back!</h2>
+            <form>
+                <label for="username">Username</label> <br>
+                <input type="text" placeholder="Enter your username" id="username" required> <br>
+                <label for="password">Password</label> <br>
+                <input type="password" placeholder="Enter your password" id="password" required> <br>
+            </form>
+            <button onclick="openSignInModal()">Sign In</button>
+            <p>Not a member? <a onclick="openSignUpModal()">Sign Up</a></p>
+        </div>    
+      </div>
+
+      <div id="post-buttons">
+        <button id="all-posts" onclick="openPostList()">All Posts</button>
+        <button id="create-post" onclick="openCreatePostModal()">Create Post</button>
+      </div>
+
+      <div id="create-post-modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeCreatePostModal()"><i class="fa fa-times" aria-hidden="true"></i></span>
+          <h2>Pen Your Post</h2>
+          <form>
+              <label for="title">Title</label> <br>
+              <input id="title" type="text" placeholder="Enter title of your post" required> <br>
+              <label for="contents">Contents</label>
+              <textarea id="contents" placeholder="Enter the contents of your post"></textarea> 
+          </form>
+          <button>Create</button>
+        </div>
+      </div>
+    </div>
+
+        
+
+
+   <script src="./scripts/common.js"></script>
+   <script src="./scripts/index.js"></script>"
+       
+   
+
+</body>
+
+</html>
