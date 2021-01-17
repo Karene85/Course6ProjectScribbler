@@ -21,8 +21,31 @@ function showPost(authorId, titleId, contentId) {
             '</div>';
 }
 
-var numLikes = 0;
+function editPost() {
+    
+    document.getElementById('post-heading').setAttribute("contenteditable", "true");
+    document.getElementById('post-heading').style.border = "3px solid pink";
 
+    document.getElementById('post-content').setAttribute("contenteditable", "true");
+    document.getElementById('post-content').style.border = "3px solid pink";
+
+    document.getElementById('edit-btn').innerHTML = "Save " + "<i class='fa fa-save'></i>";
+    document.getElementById('edit-btn').setAttribute('onclick', 'savePost()');
+}
+
+function savePost() {
+    
+    document.getElementById('post-heading').setAttribute("contenteditable", "false");
+    document.getElementById('post-heading').style.border = "none";
+
+    document.getElementById('post-content').setAttribute("contenteditable", "false");
+    document.getElementById('post-content').style.border = "none";
+
+    document.getElementById('edit-btn').innerHTML = "Edit " + "<i class='fa fa-edit'></i>";
+    document.getElementById('edit-btn').setAttribute('onclick', 'editPost()');
+}
+
+var numLikes = 0;
 function likePost() {
     numLikes++;
 
@@ -35,9 +58,10 @@ function likePost() {
 }
 
 function addComment(id) {
-    var commentInput = document.getElementById(id);
+    var commentInputField = document.getElementById(id);
+    var newComment = '<p class="new-comment">' + commentInputField.value + '</p>';
     
-    document.getElementById('comment-list').innerHTML += '<p>' + commentInput.value + '</p>';
+    document.getElementById('comment-list').innerHTML = newComment + document.getElementById('comment-list').innerHTML;
 
-    commentInput.value = "";
+    commentInputField.value = "";
 }
