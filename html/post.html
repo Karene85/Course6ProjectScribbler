@@ -44,6 +44,17 @@
             <button id="like-btn" onclick="likePost()"><i class="fa fa-thumbs-up"></i>Like</button>
             <p id="like-counter">Be the first one to like this!</p>
         </div>
+
+        <div>
+            <textarea id="comment-content" rows="4" cols="50" placeholder="Leave a comment..."></textarea>
+            <br>
+            <button id="comment-btn" onclick="addComment('comment-content')">Comment</button>
+        </div>
+
+        <div>
+            <h3>All Comments</h3>
+            <div id="comment-list"></div>
+        </div>
         
         <script src="../scripts/post.js"></script>
         

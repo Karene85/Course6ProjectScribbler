@@ -33,3 +33,11 @@ function likePost() {
         document.getElementById('like-counter').innerHTML = numLikes + " people like this!";
     }
 }
+
+function addComment(id) {
+    var commentInput = document.getElementById(id);
+    
+    document.getElementById('comment-list').innerHTML += '<p>' + commentInput.value + '</p>';
+
+    commentInput.value = "";
+}
