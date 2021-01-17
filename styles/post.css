@@ -11,8 +11,14 @@
     vertical-align: middle;
     background-color: red;
     color: honeydew;
+    padding: 5px;
 }
 
 #post-author {
     float: left;
+}
+
+#like-btn {
+    background-color: red;
+    padding: 5px;
 }

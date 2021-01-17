@@ -20,3 +20,16 @@ function showPost(authorId, titleId, contentId) {
                 '<p>Post content comes here.</p>'+
             '</div>';
 }
+
+var numLikes = 0;
+
+function likePost() {
+    numLikes++;
+
+    if(numLikes==1) {
+        document.getElementById('like-counter').innerHTML = "1 person likes this!";
+    }
+    if(numLikes>1) {
+        document.getElementById('like-counter').innerHTML = numLikes + " people like this!";
+    }
+}
