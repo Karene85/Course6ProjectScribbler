@@ -22,7 +22,7 @@ function closeSignUpModal() {
 } 
 
 window.onclick = function(event) {  
-  console.log("window on click event");
+  
   var createPostModal = document.getElementById('create-post-modal');
   if (event.target == signUpModal) {
       signUpModal.style.display = "none";

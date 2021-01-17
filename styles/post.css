@@ -1,0 +1,18 @@
+#post-title {
+    text-align: center;
+}
+
+#sub-heading {
+    overflow: hidden;
+}
+
+#edit-btn {
+    float: right;
+    vertical-align: middle;
+    background-color: red;
+    color: honeydew;
+}
+
+#post-author {
+    float: left;
+}

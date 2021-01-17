@@ -5,22 +5,64 @@ body {
 .post-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 .post {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    width: 40%;
+    margin: 10px;
+    padding: 20px;
+}
+
+.post-content:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .post-author {
-    width: 20%;
+    background-color: white;
+    float: left;
+    width: 25%;
+    height: 30vh;
+    text-align: center;
+    border-radius: 25px 0px 0px 25px;
 }
 
 .post-content {
-    width: 70%;
+    width: 75%;
+    height: 30vh;
+    background-color: rgb(187, 193, 199);
+    float: right;
+    text-align: center;
+    border-radius: 0px 25px 25px 0;
+    
 }
+
+.post-title {
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    height: 60px;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+#yes-btn {
+    float: left;
+    background-color: green;
+    color: white;
+}
+
+#no-btn {
+    float:right;
+    background-color: red;
+    color: white;
+}
+
+
+
+
 

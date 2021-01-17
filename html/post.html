@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Post</title>
+
+        <script src="https://use.fontawesome.com/14db947592.js"></script>
+
+        <link href='../styles/common.css' rel='stylesheet' type='text/css'>
+        <link href='../styles/post.css' rel='stylesheet' type='text/css'>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montez&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <button id="sign-up-button" onclick="openSignUpModal()">Sign Up</button>
+            <button id="sign-in-button" onclick="openSignInModal()">Sign In</button>
+            <a class="logo-title">ScriBBler</a>
+            <p class="tag-line">Explore, Imagine, Create</p>       
+        </header>
+
+        <div class='post'>
+            <div id="post-heading">
+                <h1>Title</h1>
+            </div>
+            
+            <div id="sub-heading">
+                <h2 id="post-author">Author</h2>
+                <button id="edit-btn" onclick="editPost()">Edit  <i class="fa fa-edit"></i></button>
+            </div>
+
+            <div id="post-content">
+                <p>Post content comes here.</p>
+            </div>        
+        </div>
+
+        <div>
+            <button>Like</button>
+        </div>
+        
+        <script src="../scripts/post.js"></script>
+        
+    </body>
+</html>
