@@ -34,14 +34,8 @@ body {
     height: 30vh;
     background-color: rgb(187, 193, 199);
     float: right;
-    text-align: center;
     border-radius: 0px 25px 25px 0;
     
-}
-
-.post-title {
-    font-weight: bold;
-    text-align: center;
 }
 
 p {
@@ -60,6 +54,44 @@ p {
     float:right;
     background-color: red;
     color: white;
+}
+
+span {
+    float: right;
+    margin: 10px;
+}
+
+.post-author {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.post-title {
+    display: flex;
+    flex-direction: row;
+}
+
+.post {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h4 {
+    margin: 0;
+    text-align: center;
+}
+
+p {
+    text-align: center;
 }
 
 

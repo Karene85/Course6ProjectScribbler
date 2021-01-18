@@ -13,11 +13,9 @@ body, html {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    cursor: pointer;
+    margin: auto;
+    width: 40%;
+    padding: 150px 0;
 
 }
 
@@ -25,10 +23,69 @@ body, html {
     background-color: orange;
     color: black;
     margin: 10px;
+    padding: 6px;
+    cursor: pointer;
 }
 
 #create-post {
     background-color: orange;
     color: black;
     margin: 10px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+#sign-in-modal {
+    display: none;
+}
+
+#sign-up-btn-2 {
+    cursor: pointer;
+    background-color: rgb(22, 192, 22);
+    padding: 5px;
+}
+
+#sign-up-modal {
+    display: none;
+    
+}
+
+#modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    margin: 0;
+}
+
+h2 {
+    float: left;
+}
+
+.close {
+    float: right;
+    vertical-align: middle;
+}
+
+input {
+    padding: 5px;
+}
+
+label {
+    font-weight: bold;
+}
+
+#sign-in-btn {
+    background-color: rgb(22, 192, 22);
+    padding: 5px;
+}
+
+#sign-up-btn {
+    background-color: rgb(22, 192, 22);
+    padding: 5px;
+}
+
+#create-btn {
+    background-color: rgb(22, 192, 22);
+    padding: 5px;
 }

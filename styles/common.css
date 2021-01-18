@@ -1,5 +1,6 @@
 header {
   padding: 10px;
+  padding-top: 10px;
 }
 
 .logo-title {
@@ -19,7 +20,7 @@ button#sign-up-button {
     background-color: #112fb4;
     color: aliceblue;
     float: right;
-    margin: 10px 10px 0px 0px;
+    margin: 10px;
     width: 90px;
     padding: 10px;
 }
@@ -28,7 +29,7 @@ button#sign-in-button {
     background-color: #112fb4;
     color: aliceblue;
     float: right;
-    margin: 10px 10px 0px 0px;
+    margin: 10px;
     width: 90px;
     padding: 10px;
 }

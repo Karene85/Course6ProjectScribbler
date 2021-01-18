@@ -30,35 +30,41 @@
       </header>
 
     <div id="sign-up-modal" class="modal">
-        <div class="modal-content">           
-          <span class="close" onclick="closeSignUpModal()"><i class="fa fa-times" aria-hidden="true"></i></span>
-          <h2>Get Started</h2>
+        <div class="modal-content"> 
+          <div>
+            <h2>Get Started</h2>
+            <span class="close" onclick="closeSignUpModal()"><i class="fa fa-times" aria-hidden="true"></i></span>
+          </div>          
+          
           <form>
-            <label for="name">Name</label> <br>
+            <label for="name">Name</label> 
             <input type="text" placeholder="Enter your name" id="name" required> <br>
-            <label for="username">Username</label> <br>
+            <label for="username">Username</label> 
             <input type="text" placeholder="Enter your username" id="username" required> <br>
-            <label for="password">Password</label> <br>
+            <label for="password">Password</label> 
             <input type="password" placeholder="Enter your password" id="password" required> <br>
-            <label for="confirm-password">Confirm password</label> <br>
+            <label for="confirm-password">Confirm password</label> 
             <input type="password" placeholder="Re-enter your password" id="confirm-password" required> <br>
           </form>
-          <button>Sign Up</button>
+          <button id="sign-up-btn">Sign Up</button>
         </div>      
       </div>
 
       <div id="sign-in-modal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeSignInModal()"><i class="fa fa-times" aria-hidden="true"></i></span>
-            <h2>Welcome Back!</h2>
+            <div>
+              <h2>Welcome Back!</h2>
+              <span class="close" onclick="closeSignInModal()"><i class="fa fa-times" aria-hidden="true"></i></span>
+            </div>
+            
             <form>
-                <label for="username">Username</label> <br>
+                <label for="username">Username</label> 
                 <input type="text" placeholder="Enter your username" id="username" required> <br>
-                <label for="password">Password</label> <br>
+                <label for="password">Password</label> 
                 <input type="password" placeholder="Enter your password" id="password" required> <br>
             </form>
-            <button onclick="openSignInModal()">Sign In</button>
-            <p>Not a member? <a onclick="openSignUpModal()">Sign Up</a></p>
+            <button id="sign-in-btn" onclick="openSignInModal()">Sign In</button>
+            <p style="text-align: center;">Not a member? <button id="sign-up-btn-2" onclick="openSignUpModal()">Sign Up</button></p>
         </div>    
       </div>
 
@@ -69,15 +75,18 @@
 
       <div id="create-post-modal" class="modal">
         <div class="modal-content">
-          <span class="close" onclick="closeCreatePostModal()"><i class="fa fa-times" aria-hidden="true"></i></span>
-          <h2>Pen Your Post</h2>
+          <div>
+            <h2>Pen Your Post</h2>
+            <span class="close" onclick="closeCreatePostModal()"><i class="fa fa-times" aria-hidden="true"></i></span>
+          </div>
+          
           <form>
-              <label for="title">Title</label> <br>
+              <label for="title">Title</label> 
               <input id="title" type="text" placeholder="Enter title of your post" required> <br>
               <label for="contents">Contents</label>
-              <textarea id="contents" placeholder="Enter the contents of your post"></textarea> 
+              <textarea rows="10" cols="50" id="contents" placeholder="Enter the contents of your post"></textarea> 
           </form>
-          <button>Create</button>
+          <button id="create-btn">Create</button>
         </div>
       </div>
     </div>
